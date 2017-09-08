@@ -1,0 +1,23 @@
+{
+  "name": "dalogin",
+  "version": "1.0.0",
+  "description": "Log In page with Illustration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imosnter/DaLogin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imosnter/DaLogin/issues"
+  },
+  "homepage": "https://github.com/Imosnter/DaLogin#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "yarn": "^1.0.0"
+  }
+}
