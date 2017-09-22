@@ -1,3 +1,6 @@
+body {
+  font-family: Roboto,sans-serif; }
+
 .container {
   height: 100%;
   width: 960px;
@@ -11,9 +14,15 @@
   float: left; }
 
 .dart__image {
+  margin-top: 0;
   height: 400px;
-  background-image: url("src/images/darth.png");
+  background-image: url("../images/darth.png");
   background-size: cover; }
+
+.gradient__text {
+  background: -webkit-linear-gradient(45deg, #eb3741, #eaee5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .inner--container {
   width: 430px;
@@ -27,16 +36,17 @@
   float: left;
   background-color: aquamarine; }
 
+.col--md-3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline; }
+
 .form__header {
   width: 300px;
   height: 100px;
   background-color: aqua; }
 
-.btn {
-  height: 20px;
-  width: 50px; }
-
-.form__title, .btn {
+.form__title {
   float: left;
   margin-left: auto;
   margin-right: auto; }
@@ -44,6 +54,56 @@
 hr {
   margin-right: auto;
   margin-left: auto; }
+
+/*TOP SLIDER*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+.switch input {
+  display: none; }
+
+.switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .switch__slider {
+  background-color: #2196F3; }
+
+input:focus + .switch__slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .switch__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.switch__slider.switch__round {
+  border-radius: 34px; }
+
+.switch__slider.round:before {
+  border-radius: 50%; }
 
 .footers {
   float: left;
